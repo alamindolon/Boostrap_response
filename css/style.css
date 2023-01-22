@@ -1,8 +1,12 @@
+.img{
+    max-width: 100%;
+}
 .header{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    flex-wrap: wrap;
 }
 .title{
     font-size: large;
@@ -15,4 +19,41 @@
     background-image: linear-gradient(tomato,orange);
     padding: 5px 15px;
     border-radius: 10px;
+}
+
+
+
+@media (max-width:576px)
+{
+    .header{
+        flex-direction: column;
+    }
+    .title{
+        text-align: center;
+        font-weight: 900;
+    }
+    .header>div{
+        width: 100%;
+    }
+    .button{
+        position:relative;
+        left: 35%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:768px)
+{
+    .header>div{
+        width: 100%;
+    }
+    .title{
+        text-align: center;
+        font-weight: 900;
+    }
+    .button{
+        position:relative;
+        left: 35%;
+        margin-bottom: 30px;
+    }
 }
