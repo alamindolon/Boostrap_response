@@ -1,3 +1,18 @@
-p{
-    color: blue;
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.title{
+    font-size: large;
+    font-weight: lighter;
+}
+.header>div{
+    width: 50%;
+}
+.button{
+    background-image: linear-gradient(tomato,orange);
+    padding: 5px 15px;
+    border-radius: 10px;
 }
